@@ -5,7 +5,7 @@ set -euo pipefail
 
 UPSTREAM_BASE_URL="${FGETPRIORITY_BASE_URL:-https://raw.githubusercontent.com/aerath-stuff/fgetpriority/master/kernel}"
 FS_DIR_NAME="fgetpriority"
-SRC_FILES="main.c kernel.h arch.h arm64_branch_insn.h routine.h routine_kp.c routine_raw.c Kconfig Makefile LICENSE"
+SRC_FILES="main.c kernel.h arch.h arm64_branch_patch.h routine.h routine_kp.c routine_raw.c Kconfig Makefile LICENSE"
 
 : "${KERNEL_ROOT:?KERNEL_ROOT is not set (run this through ABK)}"
 : "${DEFCONFIG:?DEFCONFIG is not set (run this through ABK)}"
