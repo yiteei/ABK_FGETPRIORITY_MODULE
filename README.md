@@ -30,7 +30,7 @@ bash setup.sh
 
 | 位置 | 改动 |
 | --- | --- |
-| `$KERNEL_SRC/fs/fgetpriority/` | 上游 10 个文件：`main.c` `kernel.h` `arch.h` `arm64_branch_insn.h` `routine.h` `routine_kp.c` `routine_raw.c` `Kconfig` `Makefile` `LICENSE` |
+| `$KERNEL_SRC/fs/fgetpriority/` | 上游 10 个文件：`main.c` `kernel.h` `arch.h` `arm64_branch_patch.h` `routine.h` `routine_kp.c` `routine_raw.c` `Kconfig` `Makefile` `LICENSE` |
 | `$KERNEL_SRC/fs/Makefile` | 追加一行 `obj-$(CONFIG_FGETPRIORITY) += fgetpriority/` |
 | `$KERNEL_SRC/fs/Kconfig` | 最后一个 `endmenu` 之前插入 `source "fs/fgetpriority/Kconfig"`，没有 `endmenu` 时追加到末尾 |
 | `$DEFCONFIG` | 就地改写为 `CONFIG_FGETPRIORITY=y` |
