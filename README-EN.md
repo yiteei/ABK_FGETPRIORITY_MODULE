@@ -30,7 +30,7 @@ Under the GKI layout the kernel source root is `$KERNEL_ROOT/common`; the script
 
 | Location | Change |
 | --- | --- |
-| `$KERNEL_SRC/fs/fgetpriority/` | The ten upstream files: `main.c` `kernel.h` `arch.h` `arm64_branch_insn.h` `routine.h` `routine_kp.c` `routine_raw.c` `Kconfig` `Makefile` `LICENSE` |
+| `$KERNEL_SRC/fs/fgetpriority/` | The ten upstream files: `main.c` `kernel.h` `arch.h` `arm64_branch_patch.h` `routine.h` `routine_kp.c` `routine_raw.c` `Kconfig` `Makefile` `LICENSE` |
 | `$KERNEL_SRC/fs/Makefile` | Appends one line, `obj-$(CONFIG_FGETPRIORITY) += fgetpriority/` |
 | `$KERNEL_SRC/fs/Kconfig` | Inserts `source "fs/fgetpriority/Kconfig"` before the last `endmenu`, appending at the end when there is none |
 | `$DEFCONFIG` | Rewritten in place to `CONFIG_FGETPRIORITY=y` |
